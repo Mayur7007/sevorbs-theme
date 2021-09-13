@@ -1,0 +1,147 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: #DFF0D8;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+/* custom start */
+
+.pull-left {
+  text-align: right !important;
+}
+
+.pull-right {
+  text-align: right !important;
+}
+
+/* COMMON END */
+
+.top-info-tab {
+  color: black;
+  /*background-color: #2d2d2d;*/
+  background-color: #DFF0D8;
+  display: flex;
+}
+
+.top-info-tab-contact {
+  display: flex;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.top-link {
+  color: black;
+}
+
+.top-link:hover {
+  pointer-events: none;
+  color: black;
+}
+
+.top-info-tab-social {
+  display: flex;
+  text-align: right;
+}
+
+.top-email-icon {
+  font-size: 16px ;
+  color: #0593d3 ;
+  margin-right: 10px ;
+}
+
+.top-phone-icon {
+  font-size: 16px ;
+  color: #0593d3 ;
+  margin-left: 20px ;
+  margin-right: 10px ;
+}
+
+.top-info-tab-social-label {
+  position: absolute;
+  right: 100px;
+  padding-top: 15px;
+}
+
+.top-info-tab-social-icon {
+  font-size: 30px;
+  position: absolute;
+  padding-top: 5px;
+  color: #0593d3 ;
+}
+
+.top-info-tab-social-icon:hover {
+  pointer-events: none;
+  color: #0593d3 ;
+}
+
+.top-info-tab-social-icon-facebook {
+  right: 15px;
+}
+
+.top-info-tab-social-icon-linkedin {
+  right: 55px;
+}
